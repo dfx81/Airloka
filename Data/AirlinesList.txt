@@ -1,0 +1,12 @@
+; NUMBER OF ENTRIES
+  5
+; AIRLINES CATEGORY COUNT
+; RWRD TIER FLEX
+  1    2    2
+; AIRLINES ENTRIES
+; TYPE ID NAME               RATING DATA-SOURCE
+  R    0  EirAsia            5      basic-price.txt rewards.txt
+  T    0  Malinda_Air        4      tier-price.txt  tier-features.txt
+  F    0  Malaysia_Eirlines  3      basic-price.txt extra-fees.txt
+  T    1  Tricolore_Airlines 5      tier-price.txt  tier-features.txt
+  F    1  Dodo_Air           3      basic-price.txt extra-fees.txt
