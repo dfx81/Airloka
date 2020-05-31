@@ -1,6 +1,6 @@
 # Airloka Project
 
-[Download Link for Normal Release](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
+Normal Release (V1.0): [Download](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
 
 ## DISCLAIMER
 
