@@ -1,5 +1,7 @@
 # Airloka Project
 
+[Download Link for Normal Release](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
+
 ## DISCLAIMER
 
 The airplane pixel art icon used for the logo is created by Danial.  
