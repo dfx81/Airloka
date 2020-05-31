@@ -1,4 +1,4 @@
-# ![Airloka Logo](https://raw.githubusercontent.com/dfx81/Airloka/master/Source/Assets/icon.png) Airloka Project
+# ![Airloka Logo](https://raw.githubusercontent.com/dfx81/Airloka/master/Source/Assets/icon.png) Airloka Project for Assignment 2
 
 Normal Release (V1.0): [Download](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
 
