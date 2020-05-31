@@ -1,3 +1,5 @@
+![Airloka Logo](https://raw.githubusercontent.com/dfx81/Airloka/master/Source/Assets/icon.png)
+
 # Airloka Project
 
 Normal Release (V1.0): [Download](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
