@@ -1,6 +1,10 @@
 # ![Airloka Logo](https://raw.githubusercontent.com/dfx81/Airloka/master/Source/Assets/icon.png) Airloka Project for Assignment 2
 
-Normal Release (V1.0): [Download](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
+Normal Release (V1.1): [Download](https://github.com/dfx81/Airloka/raw/master/Airloka.zip)  
+
+    Changelog:  
+    - V1.0: Initial release  
+    - V1.1: Improvements and bug fixes  
 
 ## DISCLAIMER
 
