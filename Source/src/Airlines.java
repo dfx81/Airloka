@@ -12,22 +12,29 @@ class Airlines{
     public Airlines(String name, int rating, String url) throws Exception{
        this.name = name;
        this.rating = rating;
+       
        loadData(url);
     }
     
     // Load the pricing data
-    public void loadData(String url) throws Exception{
-        URL data = new URL(url);
-        Scanner in = new Scanner(data.openStream());
-        
-        pricing = new String[in.nextInt()];
-        in.nextLine();
-        
-        for (int i = 0; in.hasNext(); i++){
-            pricing[i] = in.nextLine();
-        }
-        
-        in.close();
+    public void loadData(String url){
+    	try {
+    		URL data = new URL(url);
+    		Scanner in = new Scanner(data.openStream());
+
+    		pricing = new String[in.nextInt()];
+    		in.nextLine();
+
+    		for (int i = 0; i != pricing.length; i++){
+    			pricing[i] = in.nextLine();
+    		}
+
+    		in.close();
+    	} catch (Exception err) {
+    		err.printStackTrace();
+    		System.out.println("ERROR: " + err);
+    		System.exit(-1);
+    	}
     }
     
     // Standard getters

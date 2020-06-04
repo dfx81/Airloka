@@ -23,18 +23,24 @@ class TierAirlines extends Airlines{
     }
     
     // Fetch extra data from url
-    public void loadTiers(String url) throws Exception{
-        URL data = new URL(url);
-        Scanner in = new Scanner(data.openStream());
-        
-        tierFeatures = new String[in.nextInt()];
-        in.nextLine();
-        
-        for (int i = 0; in.hasNext(); i++){
-            tierFeatures[i] = in.nextLine();
+    public void loadTiers(String url){
+        try {
+        	URL data = new URL(url);
+            Scanner in = new Scanner(data.openStream());
+            
+            tierFeatures = new String[in.nextInt()];
+            in.nextLine();
+            
+            for (int i = 0; i != tierFeatures.length; i++){
+                tierFeatures[i] = in.nextLine();
+            }
+            
+            in.close();
+        } catch (Exception err) {
+        	err.printStackTrace();
+        	System.out.println("ERROR: " + err);
+        	System.exit(-1);
         }
-        
-        in.close();
     }
     
     // Getters + Setters

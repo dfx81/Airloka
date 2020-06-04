@@ -19,17 +19,23 @@ class FlexAirlines extends Airlines{
     
     // Load extra data required for the airline
     // Data fetched from url
-    public void loadExtraFee(String url) throws Exception{
-        URL data = new URL(url);
-        Scanner in = new Scanner(data.openStream());
-        
-        extraPricing = new double[in.nextInt()];
-        
-        for (int i = 0; in.hasNext(); i++){
-            extraPricing[i] = in.nextDouble();
-        }
-        
-        in.close();
+    public void loadExtraFee(String url){
+    	try {
+    		URL data = new URL(url);
+            Scanner in = new Scanner(data.openStream());
+            
+            extraPricing = new double[in.nextInt()];
+            
+            for (int i = 0; i != extraPricing.length; i++){
+                extraPricing[i] = in.nextDouble();
+            }
+            
+            in.close();
+    	} catch (Exception err) {
+    		err.printStackTrace();
+    		System.out.println("ERROR: " + err);
+    		System.exit(-1);
+    	}
     }
     
     // Getters + Setters

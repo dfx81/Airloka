@@ -24,17 +24,23 @@ class RewardAirlines extends Airlines{
     
     // Load some extra data required by this airline
     // Data fetched from url
-    public void loadReward(String url) throws Exception{
-        URL data = new URL(url);
-        Scanner in = new Scanner(data.openStream());
-        
-        rewardTiers = new String[Integer.parseInt(in.next())];
-        
-        for (int i = 0; in.hasNext(); i++){
-            rewardTiers[i] = in.nextLine();
+    public void loadReward(String url){
+        try {
+        	URL data = new URL(url);
+            Scanner in = new Scanner(data.openStream());
+            
+            rewardTiers = new String[Integer.parseInt(in.next())];
+            
+            for (int i = 0; i != rewardTiers.length; i++){
+                rewardTiers[i] = in.nextLine();
+            }
+            
+            in.close();
+        } catch (Exception err) {
+        	err.printStackTrace();
+        	System.out.println("ERROR: " + err);
+        	System.exit(-1);
         }
-        
-        in.close();
     }
     
     // Reschedule flight method
