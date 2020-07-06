@@ -1,0 +1,28 @@
+0
+EirAsia
+3
+0.0
+0
+Malinda Air
+4
+100.0
+0
+Malaysia Eirlines
+4
+50.0
+1
+Tricolore Airlines
+5
+0
+1
+Dodo Air
+5
+0
+1
+Gerudo Air
+3
+1
+1
+Katar Airline
+4
+0
